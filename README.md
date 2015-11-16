@@ -1,16 +1,28 @@
-# Template Project for Labs [![Build Status](https://travis-ci.org/ULH-WebDevelopment/TemplateLab.svg?branch=master)](https://travis-ci.org/ULH-WebDevelopment/TemplateLab)
-
-This project is a template for the lab sessions of the Master 2 IDOD course at the [University of Le Havre](https://www.univ-lehavre.fr).
-
-The purpose of this template is to ease the completion and testing of labs.
+# Lab on D3.js
 
 
 
 ## Assignment
 
 
-This section is a placeholder to describe the assignment for this lab.  It should define what is expected of you.
+Ce TP fait usage de la bibliothèque D3.js afin de créer dynamiquement une représentation graphique de données structutées textuelles.
 
+On va utiliser les données du fichier `app/data/eure.json` déjà utilisé dans le tp sur les modèles de données.
+
+Le but est de proposer une représentation graphique des objets (en utilisant le module `Shapes`). Les différents types d'objets (`road`, `amenity`, `building`) ont une forme définie par leur attribut `nodes`.
+
+Utiliser la bibliothèque D3.js pour dessiner une carte représentant ces différents objets.
+
+Contraintes :
+- Chaque type d'objet aura un style visuel qui lui est propre (couleur, bordure).
+- Les objets "Building" auront un comportement particulier:
+    - ils changeront de couleur lors du passage de la souris ;
+    - ils afficheront des informations (nom, surface, etc.) lors d'un clic.
+- Seuls les objets `Building` sont réactifs aux évènements de souris.
+- Les objets routes ne sont pas fermés, ils n'ont pas de remplissage (_fill_).
+- Pour simplifier on considère que l'unité utilisée dans les données est le mètre
+- Par défaut, un mètre = un pixel.
+- Il doit être poussible de **zoomer** sur la carte. 
 
 Knowing the assignment, follow the steps below in order to complete the lab.
 
