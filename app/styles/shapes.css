@@ -1,0 +1,10 @@
+.building {
+  stroke: red;
+  stroke-width: 1px;
+  fill: OliveDrab;
+}
+.building.over {
+  stroke: red;
+  stroke-width: 3px;
+  fill: orange;
+}
